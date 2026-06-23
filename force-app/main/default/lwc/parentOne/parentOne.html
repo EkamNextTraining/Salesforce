@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Parent One">
+        <p>message : {message}</p>
+        <lightning-input label="Enter Name" value={text} onchange={inputHandler}></lightning-input>
+        <lightning-input label="Enter City" value={city} onchange={cityHandler}></lightning-input>
+        <lightning-button label="Send Message" onclick={sendMessage}>
+        </lightning-button>
+    </lightning-card>
+</template>

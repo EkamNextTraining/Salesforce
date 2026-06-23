@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Parent LWC">
+        <p>message1 : {message1}</p>
+        <p>{message}</p>
+        <p>City is: {city1}</p>
+        <lightning-input label="Enter Name" value={name} onchange={inputHandler}></lightning-input>
+        <lightning-input label="Enter City" value={city} onchange={cityHandler} ></lightning-input>
+       <p class="addressCss" >User entered address is  : <span style="color:rgb(193, 8, 85);font-weight:bold;">{address}</span></p>
+        <c-child-lwc full-name={name} city-name={city} onsendaddress={addressEventAction}></c-child-lwc>
+    </lightning-card>
+</template>

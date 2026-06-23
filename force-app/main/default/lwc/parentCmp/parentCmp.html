@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Parent Component" icon-name="custom:custom14">
+        <lightning-input label="Name" value={name} name="name" onchange={inputHandler}></lightning-input>
+        <lightning-input label="Age" value={age}  name="age"  onchange={inputHandler}></lightning-input>
+        <lightning-input label="City" value={city}  name="city"  onchange={inputHandler}></lightning-input>
+        <p>{message}</p>
+
+
+        <lightning-button label=" Show Child" onclick={showChildAction}></lightning-button>
+        <lightning-button label=" Hide Child" onclick={hideChildAction}></lightning-button>
+        <template if:true={showChild}>
+
+
+
+
+
+
+            <template if:true={data.length} for:each={data} for:item="rec"> 
+                <div key={rec.Id} class="slds-p-around_medium lgc-bg">
+
+                    <c-child-cmp rec={rec} full-name={name} age={age} city={city} onchilddata={childEventDataAction}></c-child-cmp><!--kebab case-->
+
+                    
+                    
+                </div>
+
+            </template>   
+            
+        </template>
+    </lightning-card>
+</template>

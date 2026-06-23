@@ -1,0 +1,27 @@
+<template>
+  <!-- <lightning-record-form record-id={recordId} object-api-name={objectApiName} columns="2" mode="edit" layout-type="Full">
+  </lightning-record-form> -->
+  <lightning-record-form
+    object-api-name={objectApiName}
+    record-id={recordId}
+    fields={fields}
+  ></lightning-record-form>
+
+
+  <lightning-record-edit-form object-api-name={objectApiName}>
+    <lightning-messages></lightning-messages>
+    <div class="slds-grid">
+      <div class="slds-col slds-size_1-of-2">
+        <lightning-input-field field-name="Name"></lightning-input-field>
+        <lightning-input-field field-name="Title"></lightning-input-field>
+      </div>
+      <div class="slds-col slds-size_1-of-2">
+        <lightning-input-field field-name="Phone"></lightning-input-field>
+        <lightning-input-field field-name="Email"></lightning-input-field>
+      </div>
+    </div>
+    <div class="slds-m-top_medium">
+      <lightning-button type="submit" variant="brand" label="Edit Contact"></lightning-button>
+    </div>
+  </lightning-record-edit-form>
+</template>

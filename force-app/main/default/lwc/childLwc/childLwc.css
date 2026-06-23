@@ -1,0 +1,14 @@
+.paragraphcss{
+    color: red;
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: yellow;
+    padding: 50px;
+}
+.citycss{
+    color: rgb(70, 119, 225);
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: rgb(238, 238, 4);
+    padding: 50px;
+}

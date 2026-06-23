@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Hello World LWC" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Name" value={name} name="name" onchange={nameHandler}></lightning-input>
+            <lightning-input label="Age" value={age}  name="age"  onchange={ageHandler}></lightning-input>
+            <lightning-input label="City" value={city}  name="city"  onchange={cityHandler}></lightning-input>
+            <p>Name : {name}</p>
+            <p>Age : {age}</p>
+            <p>City : {city}</p>
+        </div>
+    </lightning-card>
+</template>

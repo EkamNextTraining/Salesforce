@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Decorators" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+           
+
+            <template if:true={data.length} for:each={data} for:item="rec"> 
+                <div key={rec.Id} class="slds-p-around_medium lgc-bg">
+                    <lightning-tile label={rec.Name} href="/bruce.html" type="media">
+                        <lightning-avatar slot="media" src="https://v1.lightningdesignsystem.com/assets/images/avatar1.jpg" fallback-icon-name="standard:person_account" alternative-text="Bruce Wayne"></lightning-avatar>
+                        <ul class="slds-list_horizontal slds-has-dividers_right">
+                            <li class="slds-item">{rec.Rating}</li>
+                            <li class="slds-item">{rec.Industry}</li>
+                        </ul>
+                    </lightning-tile>
+                </div>
+
+            </template>            
+        </div>
+    </lightning-card>
+</template>

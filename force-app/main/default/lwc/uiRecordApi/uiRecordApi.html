@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="UI Record API Create Record" icon-name="custom:custom14">
+        <div class="slds-p-around_large">
+            <lightning-input label="Name" name="Name" value={record.Name} onchange={changeHandler}></lightning-input>
+            <lightning-textarea label="Industry" name="Industry" value={record.Industry} onchange={changeHandler}></lightning-textarea>
+            <lightning-button label="Save" onclick={handleCreate}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
